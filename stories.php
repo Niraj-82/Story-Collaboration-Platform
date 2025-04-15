@@ -9,29 +9,7 @@
 </div>
 
 <main class="container slide-up">
-  <div class="filter-bar">
-    <div class="search-box">
-      <input type="text" id="storySearch" placeholder="Search stories...">
-      <button class="search-btn"><i class="fas fa-search"></i></button>
-    </div>
-    <div class="filter-options">
-      <select id="filterCategory">
-        <option value="">All Categories</option>
-        <option value="fantasy">Fantasy</option>
-        <option value="mystery">Mystery</option>
-        <option value="romance">Romance</option>
-        <option value="scifi">Science Fiction</option>
-        <option value="thriller">Thriller</option>
-      </select>
-      <select id="filterSort">
-        <option value="newest">Newest First</option>
-        <option value="oldest">Oldest First</option>
-        <option value="az">A-Z</option>
-        <option value="za">Z-A</option>
-      </select>
-    </div>
-  </div>
-
+  
   <div class="stories-grid">
     <?php
     $result = mysqli_query($conn, "SELECT s.*, u.username FROM stories s JOIN users u ON s.user_id = u.id ORDER BY s.id DESC");

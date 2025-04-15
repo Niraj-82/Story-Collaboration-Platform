@@ -38,17 +38,6 @@ $story = mysqli_fetch_assoc($result);
       ?>
     </div>
 
-    <div class="story-actions">
-      <div class="story-share">
-        <a href="#"><img src="facebook.png" alt="Share on Facebook"></a>
-        <a href="#"><img src="twitter.png" alt="Share on Twitter"></a>
-        <a href="#"><img src="images/social/link.png" alt="Copy link"></a>
-      </div>
-    </div>
-  </div>
-
-  <div class="night-mode-toggle" onclick="document.body.classList.toggle('night-mode')">
-    <i class="fas fa-moon"></i>
   </div>
 
 <?php include 'footer.php'; ?>
